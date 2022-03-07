@@ -1,1 +1,24 @@
-middle
+<h1> C-Panel </h1>
+<h2> List acconts</h2>
+<table>
+    <tr>
+        <th>UID</th>
+        <th>Domain</th>
+        <th>User</th>
+        <th>Email</th>
+        <th>Owner</th>
+        <th>IP</th>
+    </tr>
+    <% listData.data.acct.forEach(s=>{ %>
+    <tr>
+        <td><%= s.uid %></td>
+        <td><%= s.domain %></td>
+        <td><%= s.user %></td>
+        <td><%= s.email %><l</td>
+        <td><%= s.uid %></td>
+        <td><%= s.ip %></td>
+    </tr>
+    <%})%>
+    
+</table>
+

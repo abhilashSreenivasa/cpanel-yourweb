@@ -1,0 +1,16 @@
+html,body{
+    background-color: grey;
+    color:white;
+}
+table{
+    border:1px solid black;
+    padding: 5px;
+}
+td{
+    border: 1px solid rgb(61, 2, 2);
+    background-color: rgb(65, 62, 62);
+}
+th{
+    border: 1px solid rgb(61, 2, 2);
+    background-color: rgb(17, 41, 1);
+}
