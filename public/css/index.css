@@ -11,7 +11,7 @@ table{
     color:rgb(14, 13, 13);
    min-width: 100%;
    max-width: 100%;
-    box-shadow: 0 0 20px rgb(5, 133, 172);
+    box-shadow: 0 0 30px rgb(0, 7, 14);
 }
 .main{
     display: flex;
