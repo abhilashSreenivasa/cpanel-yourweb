@@ -6,15 +6,19 @@ listData.data.acct.sort(function(a, b) {
     return 0;
   });
 %>
-<table>
+<div class="main">
+<table class="table table-striped">
+    <thead>
     <tr>
-        <th>UID</th>
-        <th>Domain</th>
-        <th>User</th>
-        <th>Email</th>
-        <th>Owner</th>
-        <th>IP</th>
+        <th scope="col">UID</th>
+        <th scope="col">Domain</th>
+        <th scope="col">User</th>
+        <th scope="col">Email</th>
+        <th scope="col">Owner</th>
+        <th scope="col">IP</th>
     </tr>
+   </thead>
+   <tbody>
     <% listData.data.acct.forEach(s=>{ %>
     <tr>
         <td><%= s.uid %></td>
@@ -25,6 +29,6 @@ listData.data.acct.sort(function(a, b) {
         <td><%= s.ip %></td>
     </tr>
     <%})%>
-    
+</tbody>
 </table>
-
+</div>
