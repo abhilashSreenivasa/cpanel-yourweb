@@ -2,6 +2,9 @@ html,body{
     display: flex;
     flex-direction: column;
     background:linear-gradient(to left,rgb(233, 230, 230),rgb(146, 139, 139),rgb(233, 230, 230));
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     
 }
 
@@ -12,6 +15,7 @@ table{
    min-width: 100%;
    max-width: 100%;
     box-shadow: 0 0 30px rgb(0, 7, 14);
+    
 }
 .main{
     display: flex;
@@ -21,9 +25,11 @@ table{
     align-self: center;
 }
 td{
+    
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    text-align: center;
 }
 th{
     border: 1px solid #dddddd;
@@ -31,6 +37,7 @@ th{
     padding: 8px;
     color: white;
     background-color: rgb(5, 133, 172);
+    text-align: center;
 }
 tr:nth-child(even) {
     background-color: #ced1d8f5;
@@ -43,4 +50,35 @@ tr:nth-child(even) {
     cursor: pointer;
     height: 2em;  /* more precisely it should be (2.4x2.4)/2.8  */
     width: fit-content;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    
+  }
+  .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:linear-gradient(to left,rgb(146, 139, 139),rgb(214, 212, 212),rgb(146, 139, 139));
+    justify-content: center;
+     width:100%;
+     margin:10px 0px; 
+  }
+  .nav-items{
+      display: flex;
+      
+      background-color: rgb(0, 0, 0);
+      border: 1px solid rgb(110, 108, 108);
+  }
+  .nav-items a{
+    color: rgb(221, 215, 215);
+    text-align: center;
+    text-decoration: none;
+    padding:15px;
+    font-size: 23px;
+ 
+  }
+
+  .nav-items:hover{
+   
+    background-color: rgb(27, 90, 2);
   }

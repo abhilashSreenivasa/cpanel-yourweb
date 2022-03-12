@@ -1,5 +1,11 @@
-
-
+<%
+acctData.data.acct.sort(function(a, b) {
+    if (a.inodesused < b.inodesused) return -1;
+    if (a.inodesused > b.inodesused) return 1;
+    return 0;
+  });
+%>
+<div class="main">
 <table>
     <tr>
         <th>Inode User</th>
@@ -22,3 +28,4 @@
     
 </table>
 
+</div>
