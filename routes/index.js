@@ -3,7 +3,9 @@ const acctSummary = require('../api-data/acctSummary')
 const listAccounts=require('../api-data/listAccounts')
 const router=express.Router()
 
-router.get('/', async(req,res)=>{
+
+
+router.get('/listaccts', async(req,res)=>{
     const listData=await listAccounts();
     //console.log(listData)
     //res.json(listData)
