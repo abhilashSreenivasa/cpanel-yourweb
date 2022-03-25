@@ -5,7 +5,7 @@ url=""+process.env.ACCT_SUMMARY
 
 const config = {
     headers: {
-      Authorization: `whm  root:QWNJPKDDABK59SDHUB10N1DFLRLKSX11`
+      Authorization: `whm  root:${token}`
     }
   }
 
