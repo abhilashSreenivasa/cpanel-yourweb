@@ -8,7 +8,6 @@ const bodyParser=require('body-parser')
 
 
 const indexRouter=require('./routes/index')
-const homeRouter=require('./routes/home')
 
 app.set('view engine','ejs')
 app.set('views',__dirname+'/views')
@@ -19,7 +18,6 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.set('json spaces', 2)
 
 app.use(indexRouter)
-app.use(homeRouter)
 
 app.listen(process.env.PORT || 3000)
 

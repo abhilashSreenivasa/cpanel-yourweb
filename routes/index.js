@@ -2,7 +2,14 @@ const express= require('express')
 
 const acctSummary = require('../api-data/acctSummary')
 const listAccounts=require('../api-data/listAccounts')
+const acctCounts=require('../api-data/acctCounts')
 const router=express.Router()
+
+router.get('/home', async(req,res)=>{
+    const data=await acctCounts()
+    res.render('home',{acctCounts:data})
+})
+
 
 router.get('/acctsummary', async(req,res)=>{
     const listData=await acctSummary();
@@ -18,5 +25,8 @@ router.get('/listaccts', async(req,res)=>{
    res.render('index',{listData:listData})
 })
 
+router.get('*', function(req, res) {
+    res.redirect('/home');
+});
 
 module.exports=router
