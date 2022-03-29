@@ -78,7 +78,55 @@ tr:nth-child(even) {
  
   }
 
-  .nav-items:hover{
-   
-    background-color: rgb(27, 90, 2);
+  .nav-items:hover a{
+    background:linear-gradient(to left,rgb(3, 100, 129),rgb(5, 133, 172),rgb(3, 100, 129));   
+  }
+  .export-btn-section{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content:space-between;
+    
+  }
+  .nav-head{
+    font-weight: bold;
+    font-size: 25px;
+   padding-left:15px;
+  }
+  .export-btn{
+    display:flex;
+  
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+  }
+  .export-btn button:hover{
+    cursor: pointer;
+  }
+
+  .export-btn button:hover img{
+    cursor: pointer;
+    background-color: rgb(5, 133, 172) ;
+  }
+  .export-btn button{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 133, 172);
+    border-radius:10px; 
+    padding:15px;
+    border:1px solid rgb(255, 255, 255)
+
+  }
+  .export-btn button img{
+    width:50px;
+    background-color: inherit;
+    background: white;
+
+  }
+  .active{
+    background-color: rgb(5, 133, 172);
   }

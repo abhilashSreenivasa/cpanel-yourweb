@@ -22,7 +22,7 @@ router.get('/acctsummary', async(req,res)=>{
 router.get('/listaccts', async(req,res)=>{
     const listData=await listAccounts();
   // res.json(listData)
-   res.render('index',{listData:listData})
+   res.render('listAccts',{listData:listData})
 })
 
 router.get('*', function(req, res) {

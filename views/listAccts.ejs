@@ -6,8 +6,11 @@ listData.data.acct.sort(function(a, b) {
     return 0;
   });
 %>
-<div>
-    <button onclick="HtmlTOExcel('xlsx','list-accts')">Export<img src="/images/file-export-solid.svg"/></button>
+<div class="export-btn-section">
+    <div class="nav-head">List Accounts</div>
+<div class="export-btn">
+    <button onclick="HtmlTOExcel('xlsx','list-accts')"><img src="/images/file-export-solid.svg"/></button>
+</div>
 </div>
 
 <div class="main">
