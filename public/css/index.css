@@ -130,3 +130,22 @@ tr:nth-child(even) {
   .active{
     background-color: rgb(5, 133, 172);
   }
+  .domain{
+    text-decoration: none;
+    color:black;
+    
+  }
+  .domain:hover{
+    text-decoration: underline;
+  }
+  .email{
+    text-decoration: none;
+    color:black;
+
+  }
+  .email:hover{
+    text-decoration: underline;
+  }
+  .email:visited{
+    text-decoration: underline;
+  }

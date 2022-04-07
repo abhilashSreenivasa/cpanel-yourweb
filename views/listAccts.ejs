@@ -29,9 +29,9 @@ listData.data.acct.sort(function(a, b) {
     <% listData.data.acct.forEach(s=>{ %>
     <tr>
         <td><%= s.uid %></td>
-        <td><%= s.domain %></td>
+        <td><a class ="domain" href="https://<%= s.domain %>" target="_blank" ><%= s.domain %></a></td>
         <td><%= s.user %></td>
-        <td><%= s.email %><l</td>
+        <td><a class="email" href="mailto://<%= s.email %>" target="_blank"><%= s.email %></a></td>
         <td><%= s.uid %></td>
         <td><%= s.ip %></td>
     </tr>
