@@ -1,151 +1,158 @@
 html,body{
-    display: flex;
-    flex-direction: column;
-    background:linear-gradient(to left,rgb(233, 230, 230),rgb(146, 139, 139),rgb(233, 230, 230));
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-}
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(to left,rgb(233, 230, 230),rgb(146, 139, 139),rgb(233, 230, 230));
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Oswald", Helvetica, Arial, sans-serif!important;}
 
 table{
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    color:rgb(14, 13, 13);
-   min-width: 100%;
-   max-width: 100%;
-    box-shadow: 0 0 30px rgb(0, 7, 14);
-    
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  color:rgb(14, 13, 13);
+ width: 100%;
+  box-shadow: 0 0 30px rgb(0, 7, 14);
 }
 .main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:80%;
-    align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  align-self: center;
 }
 td{
-    
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
+  
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+ 
 }
 th{
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    color: white;
-    background-color: rgb(5, 133, 172);
-    text-align: center;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: white;
+  background-color: rgb(5, 133, 172);
+  text-align: center;
+ text-align: center;
 }
 tr:nth-child(even) {
-    background-color: #ced1d8f5;
-  }
-  tr:nth-child(odd) {
-    background-color: white;
-    
-  }
-  td:hover {
-    cursor: pointer;
-    height: 2em;  /* more precisely it should be (2.4x2.4)/2.8  */
-    width: fit-content;
-    transition-timing-function: ease-in;
-    transition-timing-function: ease-out;
-    
-  }
-  .nav{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background:linear-gradient(to left,rgb(146, 139, 139),rgb(214, 212, 212),rgb(146, 139, 139));
-    justify-content: center;
-     width:100%;
-     margin:10px 0px; 
-  }
-  .nav-items{
-      display: flex;
-      
-      background-color: rgb(0, 0, 0);
-      border: 1px solid rgb(110, 108, 108);
-  }
-  .nav-items a{
-    color: rgb(221, 215, 215);
-    text-align: center;
-    text-decoration: none;
-    padding:15px;
-    font-size: 23px;
- 
-  }
-
-  .nav-items:hover a{
-    background:linear-gradient(to left,rgb(3, 100, 129),rgb(5, 133, 172),rgb(3, 100, 129));   
-  }
-  .export-btn-section{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content:space-between;
-    
-  }
-  .nav-head{
-    font-weight: bold;
-    font-size: 25px;
-   padding-left:15px;
-  }
-  .export-btn{
-    display:flex;
+  background-color: #ced1d8f5;
+}
+tr:nth-child(odd) {
+  background-color: white;
   
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 100px;
-    cursor: pointer;
-  }
-  .export-btn button:hover{
-    cursor: pointer;
-  }
-
-  .export-btn button:hover img{
-    cursor: pointer;
-    background-color: rgb(5, 133, 172) ;
-  }
-  .export-btn button{
+}
+td:hover {
+  cursor: pointer;
+  height: 2em;  /* more precisely it should be (2.4x2.4)/2.8  */
+  width: fit-content;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+  
+}
+.nav{
     display: flex;
-    width:100%;
-    align-items: center;
     justify-content: center;
-    background-color: rgb(5, 133, 172);
-    border-radius:10px; 
-    padding:15px;
-    border:1px solid rgb(255, 255, 255)
-
-  }
-  .export-btn button img{
-    width:50px;
-    background-color: inherit;
-    background: white;
-
-  }
-  .active{
-    background-color: rgb(5, 133, 172);
-  }
-  .domain{
-    text-decoration: none;
-    color:black;
+    align-items: center;
+    background:linear-gradient(to left,rgb(146, 139, 139),rgb(214, 212, 212),rgb(146, 139, 139));
+  justify-content: center;
+   width:100%;
+   margin:10px 0px; 
+}
+.nav-items{
+    display: flex;
     
-  }
-  .domain:hover{
-    text-decoration: underline;
-  }
-  .email{
-    text-decoration: none;
-    color:black;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(110, 108, 108);
+}
+.nav-items a{
+  color: rgb(221, 215, 215);
+  text-align: center;
+  text-decoration: none;
+  padding:15px;
+  font-size: 23px;
 
-  }
-  .email:hover{
-    text-decoration: underline;
-  }
-  .email:visited{
-    text-decoration: underline;
-  }
+}
+
+.nav-items:hover a{
+  background:linear-gradient(to left,rgb(3, 100, 129),rgb(5, 133, 172),rgb(3, 100, 129));   
+}
+.export-btn-section{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content:space-between;
+  
+}
+.nav-head{
+  font-weight: bold;
+  font-size: 25px;
+ padding-left:15px;
+}
+.export-btn{
+  display:flex;
+
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100px;
+  cursor: pointer;
+}
+.export-btn button:hover{
+  cursor: pointer;
+}
+
+.export-btn button:hover img{
+  cursor: pointer;
+  background-color: rgb(5, 133, 172) ;
+}
+.export-btn button{
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 133, 172);
+  border-radius:10px; 
+  padding:15px;
+  border:1px solid rgb(255, 255, 255)
+
+}
+.export-btn button img{
+  width:50px;
+  background-color: inherit;
+  background: white;
+
+}
+.active{
+  background-color: rgb(5, 133, 172);
+}
+.domain{
+  text-decoration: none;
+  color:black;
+  
+}
+.domain:hover{
+  text-decoration: underline;
+}
+.email{
+  text-decoration: none;
+  color:black;
+
+}
+.email:hover{
+  text-decoration: underline;
+}
+.email:visited{
+  text-decoration: underline;
+}
+
+
+.email, .domain, .site , .notes {
+
+  max-width:300px;
+  overflow-x:auto;
+  color:white;
+}

@@ -1,4 +1,3 @@
-
 <%
 listData.data.acct.sort(function(a, b) {
     if (a.uid < b.uid) return -1;
@@ -14,7 +13,7 @@ listData.data.acct.sort(function(a, b) {
 </div>
 
 <div class="main">
-<table  id="list-accts">
+<table  id="list-accts" class="table table-dark">
     <thead>
     <tr>
         <th >UID</th>
@@ -29,9 +28,9 @@ listData.data.acct.sort(function(a, b) {
     <% listData.data.acct.forEach(s=>{ %>
     <tr>
         <td><%= s.uid %></td>
-        <td><a class ="domain" href="https://<%= s.domain %>" target="_blank" ><%= s.domain %></a></td>
+        <td class="domain"><a class ="domain" href="https://<%= s.domain %>" target="_blank" ><%= s.domain %></a></td>
         <td><%= s.user %></td>
-        <td><a class="email" href="mailto://<%= s.email %>" target="_blank"><%= s.email %></a></td>
+        <td class="email"><a class="email" href="mailto://<%= s.email %>" target="_blank"><%= s.email %></a></td>
         <td><%= s.uid %></td>
         <td><%= s.ip %></td>
     </tr>

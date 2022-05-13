@@ -13,7 +13,8 @@ acctData.data.acct.sort(function(a, b) {
 </div>
 
 <div class="main">
-<table id="acct-summary">
+<table id="acct-summary" class="table table-dark">
+    <thead>
     <tr>
         <th>Inode User</th>
         <th>Domain</th>
@@ -22,6 +23,8 @@ acctData.data.acct.sort(function(a, b) {
         <th>Start Date</th>
         <th>Disk Used</th>
     </tr>
+    </thead>
+    <tbody>
     <% acctData.data.acct.forEach(s=>{ %>
     <tr>
         <td><%= s.inodesused %></td>
@@ -32,6 +35,7 @@ acctData.data.acct.sort(function(a, b) {
         <td><%= s.diskused %></td>
     </tr>
     <%})%>
+</tbody>
     
 </table>
 

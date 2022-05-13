@@ -3,6 +3,7 @@ const express= require('express')
 const acctSummary = require('../api-data/acctSummary')
 const listAccounts=require('../api-data/listAccounts')
 const acctCounts=require('../api-data/acctCounts')
+const hostingClients=require('../api-data/hosting_clients')
 const router=express.Router()
 
 router.get('/home', async(req,res)=>{
@@ -23,6 +24,10 @@ router.get('/listaccts', async(req,res)=>{
     const listData=await listAccounts();
   // res.json(listData)
    res.render('listAccts',{listData:listData})
+})
+
+router.get('/hostingclients',async(req,res)=>{
+    res.render('hostingClients',{hostingClients : hostingClients})
 })
 
 router.get('*', function(req, res) {

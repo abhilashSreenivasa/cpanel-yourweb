@@ -1,8 +1,7 @@
 
 const axios=require('axios')
 token=""+process.env.CPANEL_TOKEN
-url=""+process.env.LIST_ACCTS
-console.log(url)
+
 const config = {
     headers: {
       Authorization: `whm  root:${token}`

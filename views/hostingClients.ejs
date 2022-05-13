@@ -1,0 +1,39 @@
+<div class="export-btn-section">
+    <div class="nav-head">Hosting Clients</div>
+<div class="export-btn" title="Export to pdf">
+    <button onclick="HtmlTOExcel('xlsx','hosting-clients')"><img src="/images/file-export-solid.svg"/></button>
+</div>
+</div>
+
+<div class="main">
+<table  id="hosting-clients" class="table table-dark" >
+    <thead>
+    <tr>
+        <th >Site</th>
+        <th >Info1</th>
+        <th >Info2</th>
+        <th >Info3</th>
+        <th >Received fuding info</th>
+        <th >Accessibility Report Sceduled</th>
+        <th >Notes</th>
+    </tr>
+   </thead>
+   <tbody>
+    <% console.log("start"+hostingClients.hostingClients[0].Site)%>
+    <% let arr=hostingClients.hostingClients; %>
+    <% for(let i=0;i<arr.length;i++){ %>
+
+    <tr>
+
+        <td class="site"><a class ="domain" href="https://<%= arr[i].Site %>" target="_blank" > <%= arr[i].Site %></a></td>
+        <td> <%= arr[i].Info1 %></td>
+        <td>  <%= arr[i].Info2 %></td>
+        <td> <%= arr[i].Info3 %></td>
+        <td> <%= arr[i].Received_funding_info %></td>
+        <td> <%= arr[i].Accessibility_Report_Sceduled %></td>
+        <td class="notes"> <%= arr[i].Notes %></td>
+    </tr>
+    <% } %>
+</tbody>
+</table>
+</div>

@@ -1,7 +1,6 @@
 
 const axios=require('axios')
 token=""+process.env.CPANEL_TOKEN
-url=""+process.env.ACCT_COUNTS
 
 const config = {
     headers: {
