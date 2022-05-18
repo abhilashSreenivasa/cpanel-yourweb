@@ -7,6 +7,22 @@ html,body{
   width: 100%;
   font-family: "Oswald", Helvetica, Arial, sans-serif!important;}
 
+  .heading{
+    font-weight: bold;
+    font-size: 31px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif!important;
+    color: black;
+    margin-top:20px;
+
+  }
+
+  .heading-stats{
+    font-weight: bold;
+    font-size: 25px;    
+    color: black;
+    margin:5px;
+  }
+
 table{
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -14,6 +30,7 @@ table{
  width: 100%;
   box-shadow: 0 0 30px rgb(0, 7, 14);
 }
+
 .main{
   display: flex;
   justify-content: center;
@@ -35,7 +52,6 @@ th{
   padding: 8px;
   color: white;
   background-color: rgb(5, 133, 172);
-  text-align: center;
  text-align: center;
 }
 tr:nth-child(even) {
@@ -65,7 +81,7 @@ td:hover {
 .nav-items{
     display: flex;
     
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     border: 1px solid rgb(110, 108, 108);
 }
 .nav-items a{
@@ -155,4 +171,23 @@ td:hover {
   max-width:300px;
   overflow-x:auto;
   color:white;
+}
+
+table.dataTable thead th{
+  text-align: center;
+  vertical-align:middle;
+}
+
+.account-stats{
+  margin-top:45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+hr{
+
+  border-top: 1px solid black;
+  width:100%;
 }

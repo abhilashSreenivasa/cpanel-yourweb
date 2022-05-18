@@ -20,18 +20,14 @@
     <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
     <script lang="javascript" src="dist/xlsx.full.min.js"></script>
     <script src="app.js"></script>
+    <link type="text/css" rel="stylesheet"  href="/css/index.css">
 
 
     <title>C-Panel Account</title>
-    <script>
-    $(document).ready(function () {
-        $('.table-dark').DataTable();
-    });
-</script>
-<link type="text/css" rel="stylesheet"  href="/css/index.css">
+    
 </head>
 <body>
-    <h1> C-Panel </h1>
+    <div class="heading"> C-Panel </div>
     <div class="nav">
         <div class="nav-items">
             <a href="/home">Home</a>
@@ -50,7 +46,12 @@
     </div>
         <br>
         <%- body %>
-        <br>    
+        <br>  
+        <script>
+            $(document).ready(function () {
+                $('.table-dark').DataTable();
+            });
+        </script>  
     
 </body>
 </html>
