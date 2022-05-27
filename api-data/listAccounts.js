@@ -8,6 +8,7 @@ const config = {
     }
   }
 
+//Function that calls list-accts api
 async function listAccounts(){
     let response=await axios.get( 'https://chico.reclaimhosting.com:2087/cpsess6157112120/json-api/listaccts?api.version=1',
    config)

@@ -7,7 +7,7 @@ const config = {
       Authorization: `whm  root:${token}`
     }
   }
-
+//Function that calls accountsummary api
 async function acctSummary(){
     let response=await axios.get( 'https://chico.reclaimhosting.com:2087/cpsess6157112120/json-api/accountsummary?api.version=1&domain=',
    config)

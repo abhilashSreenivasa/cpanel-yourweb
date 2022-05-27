@@ -1,9 +1,11 @@
 <%
+if(listData.data){
 listData.data.acct.sort(function(a, b) {
     if (a.uid < b.uid) return -1;
     if (a.uid > b.uid) return 1;
     return 0;
   });
+}
 %>
 <div class="export-btn-section">
     <div class="nav-head">List Accounts</div>
@@ -25,6 +27,7 @@ listData.data.acct.sort(function(a, b) {
     </tr>
    </thead>
    <tbody>
+    <% if(listData.data) { %>
     <% listData.data.acct.forEach(s=>{ %>
     <tr>
         <td><%= s.uid %></td>
@@ -34,7 +37,7 @@ listData.data.acct.sort(function(a, b) {
         <td><%= s.uid %></td>
         <td><%= s.ip %></td>
     </tr>
-    <%})%>
+    <%})} %>
 </tbody>
 </table>
 </div>

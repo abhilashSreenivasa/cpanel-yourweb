@@ -19,8 +19,8 @@
     </tr>
    </thead>
    <tbody>
-    <% console.log("start"+hostingClients.hostingClients[0].Site)%>
     <% let arr=hostingClients.hostingClients; %>
+    <% if(arr) {%>
     <% for(let i=0;i<arr.length;i++){ %>
 
     <tr>
@@ -33,7 +33,7 @@
         <td> <%= arr[i].Accessibility_Report_Sceduled %></td>
         <td class="notes"> <%= arr[i].Notes %></td>
     </tr>
-    <% } %>
+    <% } }%>
 </tbody>
 </table>
 </div>

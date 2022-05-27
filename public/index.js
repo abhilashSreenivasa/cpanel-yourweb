@@ -1,3 +1,5 @@
+// Function that converts your html table to Excel sheet.
+
 function HtmlTOExcel(type,tableId, fun, dl) {
     var elt = document.getElementById(tableId);
     var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
